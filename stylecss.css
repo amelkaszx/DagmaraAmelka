@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+.block{
+    color:black;
+    background-color: black;
+}
+
+
+/* Stylizacja nagłówka */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Czarny kolor tła z nieco przezroczystością */
+    color: #black;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px; /* Powiększenie czcionki nagłówka */
+    font-family: 'Arial Black', sans-serif; /* Inna czcionka */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Efekt płynnego przejścia dla koloru linków */
+}
+
+nav ul li a:hover {
+    color: #00bfff; /* Zmiana koloru linku po najechaniu kursorem */
+}
+
+/* Stylizacja treści głównej */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 36px; /* Powiększenie czcionki tytułu */
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 18px; /* Powiększenie czcionki tekstu */
+    line-height: 1.6; /* Zwiększenie odstępu między wierszami */
+}
+
+/* Stylizacja stopki */
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Czarny kolor tła z nieco przezroczystością */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+#napis{
+    background-color: rgba(0, 0, 0, 0.7); /* Czarny kolor tła z nieco przezroczystością */
+    color: #black;
+    padding: 20px;
+    text-align: center;
+}
+#historia, #zastosowania, #przyszlosc, #zagrozenia{
+    background-color: rgba(0, 0, 0, 0.7); /* Czarny kolor tła z nieco przezroczystością */
+    padding: 20px;
+    text-align: center;
+}
+
+

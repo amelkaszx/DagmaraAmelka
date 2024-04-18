@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sztuczna Inteligencja - Strona Główna</title>
+    <link rel="stylesheet" href="stylecss.css">
+    <style>
+        /* Dodatkowe style CSS dla efektów wizualnych */
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px white, 0 0 30px white;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #339999, 0 0 40px #339999;
+            }
+        }
+
+        /* Stylizacja bloków */
+        .block {
+            background-color: rgba(255, 255, 255, 0.8); /* Kolor tła z lekką przezroczystością */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Cień */
+            transition: transform 0.3s ease; /* Efekt płynnego przejścia dla transformacji */
+        }
+
+        .block:hover {
+            transform: translateY(-5px); /* Przesunięcie bloku w górę po najechaniu kursorem */
+        }
+
+        .block h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .block p {
+            font-size: 16px;
+        }
+
+        .block a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color:  rgba(0, 0, 0, 0.5) ;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Efekt płynnego przejścia dla koloru tła przycisku */
+        }
+
+        .block a:hover {
+            background-color: #339999; /* Zmiana koloru tła przycisku po najechaniu kursorem */
+        }
+    </style>
+</head>
+<body style="background-image: url('robot.jpg');">
+    <header class="fade-in">
+        <h1 class="glow">Sztuczna Inteligencja</h1>
+        
+    </header>
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+    
+    <main class="fade-in">
+        <div id="menu">
+        <div id="historia" class="block" >      
+            <h3 class="glow">Historia sztucznej inteligencji</h3>
+            <a href="#ai-history">Czytaj</a>
+        </div>
+        <div id="zastosowania" class="block">
+            <h3 class="glow">Zastosowania AI</h3>
+            <a href="#ai-info">Czytaj</a>
+        </div>
+
+        <div id="przyszlosc" class="block">
+            <h3 class="glow">Przyszłość AI</h3>
+            <a href="#ai-przyszlosc">Czytaj</a>
+        </div>
+
+        <div id="zagrozenia" class="block">
+            <h3 class="glow">Zagrożenia związane z AI</h3>
+            <a href="#ai-zagrozenia">Czytaj</a>
+        </div>
+    </div>
+
+        
+
+       <!-- <div style="overflow: hidden;" id="napis">
+            <h3 class="glow">Mozesz równiez obejrzec ciekawe wywiady na temat AI:</h3><br>
+            <marquee behavior="scroll" direction="left"><iframe width="560" height="315" src="https://www.youtube.com/embed/LK5j3pp0Too?si=IVLuknt3A8zr2ghD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8Pm2xEViNIo?si=2dkjm_xMWPK8EgAn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </marquee>
+            
+            </div>
+        -->
+    </main>
+
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .contact-form-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 999; /* Ustawienie formularza na wierzchu */
+        }
+
+        .contact-form {
+            background-color: rgba(0, 0, 0, 0.5); /* Kolor tła z lekką przezroczystością */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            max-width: 300px; /* Maksymalna szerokość formularza */
+            width: 100%;
+            color:white;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: #339999;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: black;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-form-container">
+    <div class="contact-form">
+        <span class="close-button" onclick="closeForm()">&times;</span>
+        <h2 class="glow">Skontaktuj sie z nami!</h2>
+
+        <form action="#" method="post" id="contactForm">
+            <label for="name" class="glow">Imię:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email" class="glow">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message" class="glow">Wiadomość:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Wyślij">
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event){
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // You can perform any additional operations here before submitting the form,
+        // such as client-side validation or sending data via AJAX.
+
+        // Once any additional operations are done, you can submit the form
+        // document.getElementById("contactForm").submit();
+
+        // For demonstration purposes, I'm just showing an alert here:
+        alert("Formularz został wysłany. Dziękujemy!");
+    });
+
+    // Funkcja do zamykania formularza
+    function closeForm() {
+        var formContainer = document.querySelector(".contact-form-container");
+        formContainer.style.display = "none";
+    }
+</script>
+
+
+<div id="ai-history" >
+    <style>
+    #ai-history {
+        color:white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 800px;
+    }
+    /* Style dla nagłówka */
+    #ai-history h2 {
+        color: white;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    /* Style dla obrazków */
+    #ai-history img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+    /* Style dla paragrafów */
+    #ai-history p {
+        color: white;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    /* Style dla listy */
+    #ai-history ul {
+        color:white;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    /* Style dla elementów listy */
+    #ai-history li {
+        padding-left: 20px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    /* Style dla ikon w liście */
+    #ai-history li:before {
+        content: "\2022"; /* Kod Unicode dla kropki */
+        color: white;
+        position: absolute;
+        left: 0;
+    }
+</style>
+    <h2 >Historia Sztucznej Inteligencji</h2>
+    <p> Sztuczna inteligencja (AI) to dziedzina informatyki, która zajmuje się tworzeniem systemów komputerowych zdolnych do wykonywania zadań, które zwykle wymagają ludzkiej inteligencji. Rozwój sztucznej inteligencji to fascynująca podróż przez lata badań, innowacji i postępów technologicznych.</p>
+    <h3 >Lata 50. i 60. - Początki</h3>
+    <p>Pierwsze kroki w dziedzinie AI miały miejsce w latach 50. i 60. XX wieku. W 1956 roku odbyła się słynna konferencja w Dartmouth College, uznawana za początek tej dziedziny. W tym okresie badacze eksperymentowali z tworzeniem maszyn, które mogłyby naśladować ludzką inteligencję.</p>
+    <p>W 1956 roku powstał pierwszy program do gry w szachy, nazywany "The Logic Theorist", który był jednym z pierwszych programów AI. W latach 60. pojawiły się również pierwsze systemy rozpoznawania mowy oraz pierwsze eksperymenty z robotyką.</p>
+    <h3>Lata 70. - "Zimna wojna AI"</h3>
+    <p>W latach 70. sztuczna inteligencja napotkała na trudności, które doprowadziły do okresu znanego jako "zimna wojna AI". Pomimo tego, w tym czasie powstały pierwsze systemy ekspertowe, których celem było rozwiązywanie problemów w konkretnych dziedzinach, takich jak medycyna i inżynieria.</p>
+    <h3>Lata 80. i 90. - Eksplozja zainteresowania</h3>
+    <p>W latach 80. i 90. XX wieku nastąpił boom zainteresowania sztuczną inteligencją. Rozwój technologii komputerowych, algorytmów uczenia maszynowego i systemów ekspertowych przyczynił się do rozwoju tej dziedziny. Powstały systemy do rozpoznawania obrazów i mowy, co otworzyło drzwi do szerszego zastosowania AI w różnych dziedzinach życia.</p>
+    <h3>XXI wiek - Ekspansja i nowe wyzwania</h3>
+    <p>Wraz z początkiem XXI wieku sztuczna inteligencja zaczęła znajdować coraz szersze zastosowanie w codziennym życiu. Algorytmy uczenia maszynowego, takie jak sieci neuronowe, przyczyniły się do znacznego postępu w dziedzinie AI. Rozwój samochodów autonomicznych, asystentów głosowych i systemów rekomendacyjnych są tylko niektórymi przykładami zastosowań sztucznej inteligencji.</p>
+    <h3>Obecnie - AI w życiu codziennym</h3>
+    <p>Dzisiaj sztuczna inteligencja odgrywa coraz większą rolę w różnych obszarach życia, od medycyny i przemysłu po finanse i rozrywkę. Wykorzystuje się ją do analizy danych, automatyzacji procesów, personalizacji usług, czy prowadzenia zaawansowanych badań naukowych. Perspektywy rozwoju AI są obiecujące, ale pojawiają się również nowe wyzwania związane z etyką, bezpieczeństwem i prywatnością danych.</p>
+    <h3>Przyszłość - Wizje i wyzwania</h3>
+    <p>W przyszłości sztuczna inteligencja może odgrywać jeszcze większą rolę w społeczeństwie. Wzrost zainteresowania sztuczną inteligencją ogólnego zastosowania (AGI) i sztuczną superinteligencją otwiera nowe perspektywy, ale jednocześnie stawia przed nami wiele pytań i wyzwań dotyczących jej wpływu na życie ludzkie.</p>
+    <center>
+        
+        <button onclick="window.location.href='innastrona.html'" style="background-color: rgba(0, 0, 0, 0.3); color:white;">Czytaj wiecej</button>
+        <button onclick="window.location.href='#menu'" style="background-color: rgba(0, 0, 0, 0.3); color:white;">Powrót do menu</button>
+    </center>
+</div>
+
+
+
+
+<div id="ai-info">
+    <style>
+        #ai-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        /* Style dla nagłówka */
+        #ai-info h2 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        /* Style dla obrazków */
+        #ai-info img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        /* Style dla paragrafów */
+        #ai-info p {
+            color: white;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        /* Style dla listy */
+        #ai-info ul {
+            color:white;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        /* Style dla elementów listy */
+        #ai-info li {
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        /* Style dla ikon w liście */
+        #ai-info li:before {
+            content: "\2022"; /* Kod Unicode dla kropki */
+            color: white;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+     
+     <h2>Zastosowania Sztucznej Inteligencji</h2>
+     <p>Sztuczna inteligencja (AI) znajduje zastosowanie w wielu dziedzinach. Oto kilka przykładów:</p>
+     
+     <ul>
+         <li><strong>Automatyczne Generowanie Treści:</strong> AI może analizować duże zbiory danych i generować treści, takie jak artykuły, raporty czy podsumowania, co znacznie usprawnia proces tworzenia treści.</li>
+         <li><strong>Analiza Big Data:</strong> W analizie dużych zbiorów danych AI może odkrywać wzorce, trendy i związki, które ludzie mogliby przeoczyć, co jest szczególnie przydatne w dziedzinach takich jak marketing, finanse i nauki medyczne.</li>
+         <li><strong>Rozpoznawanie Mowy:</strong> Systemy AI potrafią przetwarzać mowę ludzką, co umożliwia stworzenie asystentów głosowych, systemów transkrypcji i aplikacji do tłumaczenia mowy na tekst.</li>
+         <li><strong>Rekomendacje Produktów:</strong> Algorytmy AI analizują zachowania użytkowników w celu personalizacji rekomendacji produktów na stronach internetowych i w aplikacjach e-commerce.</li>
+         <li><strong>Automatyzacja Procesów:</strong> AI może być wykorzystywana do automatyzacji rutynowych zadań w firmach, takich jak przetwarzanie danych, obsługa klienta, czy zarządzanie zapasami.</li>
+     </ul>
+    <h4 style="color:white;">Zdjecie wygenerowane przez AI:</h4>
+    <img src="pierwszefoto.jpg">
+     <p>Te przykłady ilustrują, jak sztuczna inteligencja zmienia sposób, w jaki działamy w wielu dziedzinach życia i biznesu, przynosząc innowacje i efektywność.</p>
+     <center>
+        <button onclick="window.location.href='innastrona2.html'" style="background-color: rgba(0, 0, 0, 0.3); color:white;">Czytaj wiecej</button>
+        <button onclick="window.location.href='#menu'" style="background-color: rgba(0, 0, 0, 0.3); color:white;">Powrót do menu</button></center>
+
+
+
+     </div>
+
+     
+
+
+
+
+
+</body>
+</html>
+
+<div id="ai-przyszlosc">
+    <style>
+        #ai-przyszlosc {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        /* Style dla nagłówka */
+        #ai-przyszlosc h2 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        /* Style dla obrazków */
+        #ai-przyszlosc img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        /* Style dla paragrafów */
+        #ai-przyszlosc p {
+            color: white;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        /* Style dla listy */
+        #ai-przyszlosc ul {
+            color:white;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        /* Style dla elementów listy */
+        #ai-przyszlosc li {
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        /* Style dla ikon w liście */
+        #ai-przyszlosc li:before {
+            content: "\2022"; /* Kod Unicode dla kropki */
+            color: white;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+     
+     <h2 style="color:white; text-align: center;">Przyszłość Sztucznej Inteligencji</h2>
+
+<p>Sztuczna inteligencja (AI) rozwija się w zastraszającym tempie, wpływając na niemal każdy aspekt naszego życia. Perspektywy na przyszłość AI są niezwykle obiecujące i potencjalnie przekształcą nasz świat w sposób, który jeszcze niedawno wydawał się science fiction.</p>
+
+<p>Najważniejsze kierunki rozwoju AI obejmują:</p>
+
+<ul>
+  <li><strong>Inteligencję zbiorową</strong>: Kombinowanie mocy obliczeniowej wielu urządzeń oraz złożonych algorytmów, aby stworzyć systemy AI, które są bardziej inteligentne i skuteczne.</li>
+  <li><strong>Autonomiczne pojazdy</strong>: Rozwój autonomicznych pojazdów, które wykorzystują AI do bezpiecznej nawigacji i podejmowania decyzji w rzeczywistym świecie.</li>
+  <li><strong>Medycyna i opieka zdrowotna</strong>: Wykorzystanie AI do diagnozowania chorób, projektowania leków oraz personalizowania opieki zdrowotnej dla pacjentów.</li>
+  <li><strong>Robotyka</strong>: Stworzenie inteligentnych robotów, które mogą współpracować z ludźmi w różnych dziedzinach, od produkcji po opiekę nad osobami starszymi.</li>
+  <li><strong>Analiza danych</strong>: Wykorzystanie AI do przetwarzania ogromnych ilości danych w celu uzyskania cennych informacji i prognozowania trendów.</li>
+</ul>
+
+<p>Przyszłość AI obiecuje rewolucyjne zmiany w sposobie, w jaki pracujemy, uczymy się, komunikujemy się i żyjemy. Kluczowym wyzwaniem będzie zapewnienie, aby rozwój sztucznej inteligencji odzwierciedlał nasze wartości i cele społeczne, jednocześnie minimalizując ryzyko negatywnych skutków.</p>
+
+     <center>
+        <button onclick="window.location.href='innastrona3.html'" style="background-color: rgba(0, 0, 0, 0.3); color:white;">Czytaj wiecej</button>
+        <button onclick="window.location.href='#menu'" style="background-color: rgba(0, 0, 0, 0.3); color:white;">Powrót do menu</button>
+    </center>
+
+
+     </div>
+
+
+
+
+     <div id="ai-zagrozenia">
+        <style>
+            #ai-zagrozenia {
+                color:white;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin: 20px auto;
+                max-width: 800px;
+            }
+            /* Style dla nagłówka */
+            #ai-zagrozenia h2 {
+                color: white;
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            /* Style dla obrazków */
+            #ai-zagrozenia img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 20px auto;
+                border-radius: 8px;
+            }
+            /* Style dla paragrafów */
+            #ai-zagrozenia p {
+                color: white;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            /* Style dla listy */
+            #ai-zagrozenie ul {
+                color:white;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            /* Style dla elementów listy */
+            #ai-zagrozenie li,strong{
+                color:white;
+                padding-left: 20px;
+                position: relative;
+                margin-bottom: 10px;
+            }
+            /* Style dla ikon w liście */
+            #ai-zagrozenie li:before {
+                content: "\2022"; /* Kod Unicode dla kropki */
+                color: white;
+                position: absolute;
+                left: 0;
+            }
+        </style>
+         <h2>Zagrożenia związane z Sztuczną Inteligencją</h2>
+
+         <p>Sztuczna inteligencja (AI) niesie ze sobą ogromne możliwości, ale również poważne zagrożenia, które mogą wpłynąć na społeczeństwo i światowe systemy w skali, którą trudno sobie wyobrazić. Kilka z tych zagrożeń obejmuje:</p>
+         
+         <ul>
+           <li><strong>Bezrobocie strukturalne</strong>: Wprowadzenie AI może doprowadzić do utraty miejsc pracy w niektórych sektorach, gdy ludzie zostaną zastąpieni przez automatyzację i robotyzację.</li>
+           <li><strong>Utrata prywatności</strong>: Korzystanie z systemów AI, które zbierają i analizują duże ilości danych osobowych, może naruszyć prywatność jednostek i doprowadzić do nadużyć.</li>
+           <li><strong>Wzrost nierówności społecznych</strong>: Wdrażanie AI może prowadzić do pogłębienia nierówności społecznych, gdy pewne grupy ludzi lub kraje mają dostęp do zaawansowanej technologii, podczas gdy inne pozostają w tyle.</li>
+           <li><strong>Zdolność do manipulacji</strong>: Systemy AI mogą być wykorzystane do manipulowania informacjami, dezinformacji lub propagandy, co stanowi zagrożenie dla demokracji i stabilności społecznej.</li>
+           <li><strong>Ryzyko cyberataków</strong>: Wprowadzenie AI może zwiększyć ryzyko cyberataków, ponieważ potencjalni przeciwnicy mogą wykorzystać zaawansowane algorytmy do tworzenia bardziej skutecznych ataków.</li>
+           <li><strong>Brak odpowiedzialności i etyki</strong>: Istnieje ryzyko, że rozwój AI może prowadzić do sytuacji, w których decyzje podejmowane przez systemy AI są trudne do zrozumienia lub kontrolowania, co może prowadzić do nieodpowiedzialnego zachowania.</li>
+         </ul>
+         
+         <p>Zrozumienie i adresowanie tych zagrożeń będzie kluczowe dla zapewnienia, że rozwój sztucznej inteligencji odbywa się w sposób zrównoważony i korzystny dla całego społeczeństwa.</p>
+         <h2>Jakie zagrożenia i szanse dla branży IT niesie ze sobą rozwój AI?</h2>
+         <ul>
+            <li>Ryzyko naruszenia prywatnosci danych, bądz nielegalne wykorzystanie informacji</li>
+            <li>Dyskryminacja pewnych grup ludzi pracujacych w branży IT</li>
+            <li>Modele Ai mogą byc podatne na ataki takie jak fałszywe dane wejściowe</li>
+            <li>Utrata kontroli nad AI</li>
+            <li>Zagrożenia na rynku pracy programistow i innych zawodów</li>
+            <li>AI moze byc wykorzystywana do maniupulacji informacji</li>
+            <li>Ryzyko cyberataków</li>
+         </ul>
+         
+         <center><button onclick="window.location.href='innastrona.html'" style="background-color: rgba(0, 0, 0, 0.3); color:white;">Czytaj wiecej</button>
+         <button onclick="window.location.href='#menu'" style="background-color: rgba(0, 0, 0, 0.3); color:white;">Powrót do menu</button></center>
+    
+    
+         </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <footer class="fade-in">
+        <p>&copy; 2024 Sztuczna Inteligencja - Strona Główna</p>
+    </footer>
+</body>
+</html>
+   
